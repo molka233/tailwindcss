@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white">
+    <header class="bg-rose-100 p-4 flex items-center justify-between ">
+    <h1 class="text-xl font-extrabold"> MOLKA Bouchaala</h1>
+    <nav>
+        <ul class="flex space-x-6">
+        <li><a href="#" class="text-slate-900 hover:text-blue-500">Acceuil</a></li>
+        <li><a href="#" class="text-slate-900 hover:text-blue-500">Projects</a></li>
+        <li><a href="#" class="text-slate-900 hover:text-blue-500">Contact</a></li>
+    </ul>
+    </nav>
+    </header>
+
+      <section class="relative h-screen bg-no-repeat bg-right" style="background-image: url('devp-web.avif')">
+        <div class="container mx-auto px-6 space-x-6 flex flex-col-reverse md:flex-row">
+            <div class="md:w-1/2 flex flex-col justify-center space-y-5 py-8 text-center md:text-left">
+                
+            <h1 class="mt-9 text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-4">Bonjour et Bienvenue!<br>Je suis Molka Bouchaala<br>Développeuse Web</h1>
+            <p class="text-lg md:text-xl lg:text-2xl text-black">Découvrez mon expérience à travers mes différents réalisations</p>
+            <a href="#portfolio" class="py-2 px-6 rounded-full self center md:self-start text-white bg-rose-400 hover:bg-slate-900 cta-button">Contact</a>
+          </div>
+        </div>
+      </section>
+      <section class="bg-blue-50 py-12">
+        <div class="max-w-6xl mx-auto px-6">
+          <h2 class="text-3xl font-bold text-center mb-8">Mes Compétences</h2>
+          <div class="flex flex-wrap -mx-4">
+            <!-- Compétence 1 -->
+            <div class="w-full md:w-1/3 px-4 mb-8">
+              <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+                <h3 class="text-xl font-semibold mb-4">Programmation</h3>
+                <p class="text-gray-600">Maîtrise des langages comme Html,CSS, JavaScript, et gestion d'algorithmes complexes.</p>
+              </div>
+            </div>
+            <!-- Compétence 2 -->
+            <div class="w-full md:w-1/3 px-4 mb-8">
+              <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+                <h3 class="text-xl font-semibold mb-4">Le contrôle des versions </h3>
+                <p class="text-gray-600">Suivre et vérifier les modifications apportées au code.</p>
+              </div>
+            </div>
+            <!-- Compétence 3 -->
+            <div class="w-full md:w-1/3 px-4 mb-8">
+              <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+                <h3 class="text-xl font-semibold mb-4">Développement Mobile</h3>
+                <p class="text-gray-600">Développer des applications mobiles avec une base de code partagée avec le web.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <h2 class="text-3xl font-bold text-center mb-8">Mes projets</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Carte projet 1 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <img src="E-commerce.avif" alt="Projet 1" class="w-full h-48 object-cover">
+            <div class="p-6">
+                <h2 class="text-2xl font-semibold mb-2">Boutique E-commerce</h2>
+                <p class="text-gray-600"></p>
+            </div>
+        </div>
+        
+        <!-- Carte projet 2 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <img src="blog.avif" alt="Projet 2" class="w-full h-48 object-cover">
+            <div class="p-6">
+                <h2 class="text-2xl font-semibold mb-2">Blog personnel</h2>
+                <p class="text-gray-600"></p>
+            </div>
+        </div>
+
+        <!-- Carte projet 3 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <img src="agence de réservation.avif" alt="Projet 3" class="w-full h-48 object-cover">
+            <div class="p-6">
+                <h2 class="text-2xl font-semibold mb-2">Site de réservation de voayge</h2>
+                <p class="text-gray-600"></p>
+            </div>
+        </div>
+      </section>
+      <section class="bg-blue-50 py-12">
+      
+        <h2 class="text-3xl font-semibold text-gray-700 text-center mb-2">Contactez-moi</h2>
+        
+        <form class="w-full">
+          <div class="mb-4">
+            <label for="name" class="block text-sm font-medium text-gray-700 ms-8">Nom</label>
+            <input type="text" id="name" name="name" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="Votre nom">
+          </div>
+          
+          <div class="mb-4">
+            <label for="email" class="block text-sm font-medium text-gray-700 ms-8">Email</label>
+            <input type="email" id="email" name="email" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="Votre adresse email">
+          </div>
+          
+          <div class="mb-4">
+            <label for="message" class="block text-sm font-medium text-gray-700 ms-8">Message</label>
+            <textarea id="message" name="message" rows="4" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="Votre message"></textarea>
+          </div>
+    
+          <div class="text-center">
+            <button type="submit" class="w-full bg-indigo-500 text-white px-4 py-2 rounded-md hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50">
+              Envoyer
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+      <footer>
+
+
+      <footer class="bg-red-200 text-black p-4">
+        <div class="flex justify-between items-center max-w-6xl mx-auto">
+        <p>&copy; 2024-MOLKA Bouchaala</p>
+        <div class="flex space-x-4">
+        <a href="#" class="hover:text-gray-400">Facebook</a>
+        <a href="#" class="hover:text-gray-400">linkedin</a>
+</div>
+</div>
+</footer>
+    
+</body>
+</html>
